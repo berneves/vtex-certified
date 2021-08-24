@@ -1,0 +1,19 @@
+.flexRow--headerDesktop{
+    border-bottom: 1px solid #e7e9ee;
+}
+
+.flexRow--main-row{
+    margin: 40px 0px;
+}
+
+.flexColChild--main-text{
+    height: auto !important;
+}
+
+.flexCol--main-text{
+    justify-content: center;
+}
+
+.flexRow--shelf-flex{
+    margin: 20px 0px 50px;
+}

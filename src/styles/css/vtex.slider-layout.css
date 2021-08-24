@@ -1,0 +1,8 @@
+.slide--slider-shelf{
+    border-right: 1px solid #e7e9ee;
+    padding: 10px
+}
+
+.slide--slider-shelf--lastVisible{
+    border: 0px;
+}

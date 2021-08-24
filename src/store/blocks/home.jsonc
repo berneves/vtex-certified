@@ -1,0 +1,142 @@
+{
+  "store.home": { 
+    "blocks": [
+      "flex-layout.row#first",
+      "flex-layout.row#slide1"
+    ]
+  },
+
+  "flex-layout.row#slide1":{
+    "children":[
+      "flex-layout.col#slide1"
+    ],
+    "props":{
+      "blockClass": "shelf-flex"
+    }
+  },
+  "flex-layout.row#slide2":{
+    "children":[
+      "flex-layout.col#slide2"
+    ],
+    "props":{
+      "blockClass": "shelf-flex"
+    }
+  },
+
+  "flex-layout.col#slide1":{
+    "children":[
+      "rich-text#1",
+      "list-context.product-list"
+    ]
+  },
+
+  "flex-layout.col#slide2":{
+    "children":[
+      "rich-text#2",
+      "list-context.product-list#2"
+    ]
+  },
+
+  "flex-layout.row#first":{
+    "children":[
+      "flex-layout.col#first",
+      "flex-layout.col#first-2"
+    ],
+    "props":{
+      "blockClass": "main-row"
+    }
+  },
+  "flex-layout.col#first":{
+    "children":[
+      "rich-text#main",
+      "rich-text#sub"
+    ],
+    "props":{
+      "blockClass": "main-text"
+    }
+  },
+  "rich-text#main":{
+    "props":{
+      "text": "# Faça nossas certificações e se destaque no ecossistema da América Latina"
+    }
+  },
+
+  "flex-layout.col#first-2":{
+    "children":[
+      "image#rocket"
+    ]
+  },
+  "image#rocket":{
+    "props":{
+      "src": "assets/main-image.jpg"
+    }
+  },
+
+  "rich-text#sub":{
+    "props":{
+      "text": "Aumente sua chance de crescimento com mais oportunidades"
+    }
+  },
+  
+  "rich-text#1": { 
+    "props": { 
+      "text": "## Título 1",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "shelf-title"
+    }
+  },
+  "rich-text#2": { 
+    "props": { 
+      "text": "## Título 2",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "shelf-title"
+    }
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
+  },
+  "list-context.product-list#2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout"]
+  },
+  "slider-layout":{
+    "props":{
+      "blockClass": "slider-shelf"
+    }
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-selling-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "modal-trigger#quickview": {
+    "children": ["product-summary-image", "modal-layout#quickview"]
+  },
+  "modal-layout#quickview": {
+    "children":[
+      "product-summary-name#modal",
+      "product-images",
+      "product-summary-sku-selector",
+      "product-selling-price#modal",
+      "add-to-cart-button"
+    ]
+  },
+
+  "product-selling-price#modal":{
+    "props":{
+      "blockClass": "Modal"
+    }
+  },
+
+  "product-summary-name#modal":{
+    "props":{
+      "blockClass": "Modal"
+    }
+  }
+}
